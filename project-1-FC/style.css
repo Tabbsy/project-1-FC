@@ -1,0 +1,320 @@
+body {
+  width: 441px;
+  margin: 0 auto;
+  font-family: Roboto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2, footer, .button, .my-brand {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h1, h3, h2, .my-brand, .button, .name, footer {
+  font-weight: 700;
+}
+
+nav {
+  display: none;
+}
+
+/* HEADER */
+
+.nav-container {
+  background-color: #4e4e4e;
+}
+
+.my-brand {
+  color: white;
+  padding: 10px 314px 11px 14px;
+}
+
+/* HOME PAGE */
+
+.landing-page-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("image/bgimage.jpg");
+  background-position: center;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  padding-left: 14px;
+  padding-top: 178px;
+  padding-bottom: 177.61px;
+  color: #ffffff;
+  gap: 32.25px;
+  font-weight: 700;
+}
+
+.button {
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  width: 164px;
+  height: 40.74px;
+  transition: 1s ease-in-out;
+}
+
+.button a {
+  text-decoration: none;
+  display: block;
+}
+
+a:visited {
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+}
+
+/* ABOUT US */
+
+.name-about {
+  padding: 0 14px;
+}
+
+.heading-about {
+  width: 386px;
+  height: 69px;
+  text-align: center;
+  margin: 0px 28px -40px 27px;
+  padding-top: 34px;
+}
+
+.circle {
+  height: 197px;
+  width: 197px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  margin: 54px auto;
+}
+
+.our-team,
+.team-about {
+  background-color: #f1f1f1;
+}
+
+.team-about {
+  padding-bottom: 65px;
+}
+
+.about {
+  text-align: justify;
+}
+
+.brown {
+  background-color: #907d7d;
+}
+
+/* OUR OFFER */
+
+.offer {
+  background-color: #405d78;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding-top: 76px;
+  padding-bottom: 15px;
+}
+
+
+
+.square {
+  width: 339px;
+  height: 332px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px 30px 20px;
+}
+
+.square p {
+  margin-left: 20px;
+}
+
+.dot {
+    height: 37px;
+    width: 37px;
+    background-color: #e07a64;
+    border-radius: 50%;
+    position: relative;
+    bottom: 166px;
+    right: 213px;
+  }
+
+.offer h3 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 76px 10px 59px 9px;
+  padding-bottom: 49px;
+}
+
+/* COPYRIGHT AND SOCIAL MEDIA */
+
+footer {
+  height: 120px;
+  background-color: #4e4e4e;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 38px;
+}
+
+footer p {
+  margin-bottom: 30px;
+}
+
+.fa-instagram,
+.fa-square-facebook {
+  font-size: 31px;
+  margin-right: 20px;
+}
+
+@media (min-width: 1024px) {
+  body {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  /* NAVIGATION BAR */
+
+  nav {
+    display: flex;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+  }
+
+  .nav {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    font-weight: 400;
+    padding-right: 50px;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: white;
+  } 
+ 
+  .disabled-li {
+  cursor: not-allowed;
+  color: #ffffff;
+  }
+  
+
+  .disabled-li:disabled {
+  pointer-events: none;
+  }
+  
+  /* HOME PAGE */
+
+  .landing-page-container {
+    padding-left: 94px;
+  }
+
+  .button:hover {
+  background-color: white;
+  color: black;
+  }
+
+  a:hover {
+  color: black;
+  }
+
+  /* About US */
+
+  .photo-description {
+    display: flex;
+    margin-right: 100px;
+    padding-left: 94px;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .photo-description:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  /* OFFER  */
+
+  .sqrs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .dot {
+    height: 16.5px;
+    width: 16.5px;
+    background-color: #e07a64;
+    border-radius: 50%;
+    position: relative;
+    bottom: 72px;
+    right: 117px;
+  }  
+
+  .square {
+    width: 148.5px;
+    height: 145.335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+  }
+
+  .square:hover {
+  transform: scale(1.05);
+  }
+
+  /* FOOTER */
+
+  footer {
+  height: 53.25px;
+  background-color: #4e4e4e;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+footer p {
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-instagram,
+.fa-square-facebook {
+  font-size: 31px;
+  margin-right: 13.5px;
+  padding-bottom: 35px;
+}
+.fa-square-facebook {
+  padding-right: 61.5px;
+}
+
+  
+}
